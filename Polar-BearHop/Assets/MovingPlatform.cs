@@ -11,6 +11,7 @@ public class MovingPlatform : MonoBehaviour
     public float speed = 1.5f;
 
     int direction = 1;
+    //Comment
 
     private void Update()
     {
