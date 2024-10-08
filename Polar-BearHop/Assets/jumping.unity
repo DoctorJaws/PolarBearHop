@@ -295,6 +295,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   jump: 400
+<<<<<<< Updated upstream
+=======
+  Move: 0
+>>>>>>> Stashed changes
   rb: {fileID: 666218165}
   isJumping: 0
 --- !u!1 &1361974182
