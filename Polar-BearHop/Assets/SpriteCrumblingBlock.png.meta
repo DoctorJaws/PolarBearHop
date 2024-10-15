@@ -169,7 +169,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteCrumblingBlock_0: 7369212158928853350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
