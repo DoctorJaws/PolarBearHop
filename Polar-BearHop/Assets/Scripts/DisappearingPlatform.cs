@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class DisappearingPlatform : MonoBehaviour
 {
-    public float platformDisappear = 2f;
+    public float platformDisappear = 3f;
 
     void Start()
     {
