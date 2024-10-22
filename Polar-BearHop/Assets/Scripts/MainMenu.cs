@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("UlyScene");
+        SceneManager.LoadScene("LevelOne");
     }
 
     public void Unlocks()
