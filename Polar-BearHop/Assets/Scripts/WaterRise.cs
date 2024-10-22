@@ -10,7 +10,7 @@ public class WaterRise : MonoBehaviour
     {
         // Increase the Y scale by 1 every frame
         Vector3 currentScale = transform.localScale;
-        currentScale.y += 1 * Time.deltaTime; // Adjust to frame rate
+        currentScale.y += 2 * Time.deltaTime; // Adjust to frame rate
         if (rockEventTriggered)
         {
             currentScale.y += 5; // Add 5 to the Y scale
@@ -31,7 +31,7 @@ public class WaterRise : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             // Reset the current scene
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene("Main Menu");
         }
     }
 }
