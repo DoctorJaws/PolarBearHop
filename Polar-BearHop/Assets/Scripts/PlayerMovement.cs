@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody2D rb;
 
-    public bool isJumping;
+    public bool isJumping = false;
 
 
     // Start is called before the first frame update
@@ -29,6 +29,18 @@ public class PlayerMovement : MonoBehaviour
         Move = Input.GetAxis("Horizontal");
 
         rb.velocity = new Vector2(speed * Move, rb.velocity.y);
+
+        if(Input.GetKey("a"))
+        {
+            // Flip the sprite
+            transform.localScale = new Vector3(-5, 4, 1); // Flip to the left
+        }
+        else if (Input.GetKey("d"))
+        {
+            // Reset the sprite orientation
+            transform.localScale = new Vector3(5, 4, 1); // Face right
+        }
+    
 
         if(Input.GetButtonDown("Jump") && isJumping == false)
         {
