@@ -302,6 +302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasMainMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 813733396107465422, guid: fd13807552bff4e72b9839966a78ce85, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -110
+      objectReference: {fileID: 0}
     - target: {fileID: 1699467194274604854, guid: fd13807552bff4e72b9839966a78ce85, type: 3}
       propertyPath: m_Pivot.x
       value: 0
