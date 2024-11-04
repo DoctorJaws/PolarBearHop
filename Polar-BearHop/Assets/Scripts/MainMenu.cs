@@ -7,11 +7,19 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
+        // Resets the number of collected collectibles from last playthrough
+        UnlockObject.collectedInPlaythrough = 0;
+        PlayerPrefs.SetInt("CollectedInPlaythrough", 0);
+
         SceneManager.LoadScene("LevelOne");
     }
 
     public void Unlocks()
     {
+        // Resets the number of collected collectibles from last playthrough
+        UnlockObject.collectedInPlaythrough = 0;
+        PlayerPrefs.SetInt("CollectedInPlaythrough", 0);
+        
         SceneManager.LoadScene("MenuUnlocks");
     }
 
