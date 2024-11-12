@@ -1,3 +1,8 @@
+
+version https://git-lfs.github.com/spec/v1
+oid sha256:1cc556731713f603fac4a5e61120ad9638fefdd9b160e72decbff86fab65bf0c
+size 1913206
+=======
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!29 &1
@@ -2195,3 +2200,4 @@ SceneRoots:
   - {fileID: 2071771354}
   - {fileID: 1241408602}
   - {fileID: 317804601}
+
