@@ -33,5 +33,10 @@ public class WaterRise : MonoBehaviour
             // Reset the current scene
             SceneManager.LoadScene("Main Menu");
         }
+        // Check if the colliding object is tagged as "Floor"
+        else if (collision.gameObject.CompareTag("Floor"))
+        {
+            Destroy(collision.gameObject); // Destroy the "Floor" object
+        }
     }
 }
