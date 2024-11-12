@@ -20,6 +20,7 @@ public class MainMenu : MonoBehaviour
         HandleInput();
     }
 
+
     public void StartGame()
     {
         // Resets the number of collected collectibles from last playthrough
@@ -34,7 +35,7 @@ public class MainMenu : MonoBehaviour
         // Resets the number of collected collectibles from last playthrough
         UnlockObject.collectedInPlaythrough = 0;
         PlayerPrefs.SetInt("CollectedInPlaythrough", 0);
-        
+
         SceneManager.LoadScene("MenuUnlocks");
     }
 
@@ -49,29 +50,30 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Quitted Game!");
     }
 
+
     void HandleInput()
     {
-        if(Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             selectedButtonIndex--;
-            if(selectedButtonIndex < 0)
+            if (selectedButtonIndex < 0)
             {
-                selectedButtonIndex = menuButtons.Length -1;
+                selectedButtonIndex = menuButtons.Length - 1;
             }
             HighlightButton();
         }
 
-        if(Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             selectedButtonIndex++;
-            if(selectedButtonIndex >= menuButtons.Length)
+            if (selectedButtonIndex >= menuButtons.Length)
             {
                 selectedButtonIndex = 0;
             }
             HighlightButton();
         }
 
-        if(Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.RightShift))
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.RightShift))
         {
             menuButtons[selectedButtonIndex].onClick.Invoke();
         }
@@ -79,7 +81,7 @@ public class MainMenu : MonoBehaviour
 
     void HighlightButton()
     {
-        foreach(Button button in menuButtons)
+        foreach (Button button in menuButtons)
         {
             var colors = button.colors;
             colors.normalColor = Color.white;
@@ -91,4 +93,5 @@ public class MainMenu : MonoBehaviour
         selectedColors.normalColor = Color.yellow;
         menuButtons[selectedButtonIndex].colors = selectedColors;
     }
+
 }
